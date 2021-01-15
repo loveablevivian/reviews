@@ -14,6 +14,15 @@ for d in data:    #把每筆d為字串
 print ('留言的平均長度為', sum_len/len(data))   #資料加總後除總筆數
 
 
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print ('一共有', len(new), '筆留言長度小於100')
+print (new[1])
+
+
+
 #print (data[1])
 #print (data['---------------------------------------------------------------------'])
 #print (data[2])
